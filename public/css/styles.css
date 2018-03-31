@@ -1,0 +1,41 @@
+body {
+    background-color: #343a40;
+}
+
+a, h1 {
+    color: white;
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+section p {
+    padding-bottom: 20px;
+}
+
+section.main {
+    padding-top: 75px;
+    text-align: center;
+}
+
+section.main img {
+    max-width: 100%;
+}
+
+section.white {
+    background-color: white;
+    color: black;
+}
+
+section.dark {
+    background-color: #343a40;
+    color: white;
+}
+
+section.white img, section.dark img {
+    max-width: initial;
+    width: 100%;
+    top: -10%;
+    position: relative;
+}
