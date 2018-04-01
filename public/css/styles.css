@@ -1,13 +1,28 @@
 body {
-    background-color: #343a40;
+    background-color: #568187;
+    background-image: url("patternqqq.png");
+    background-repeat: repeat-x;
 }
 
-a, h1 {
+nav {
+    background-color: #568187;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+a {
     color: white;
 }
 
 section {
-    padding-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 section p {
@@ -16,6 +31,10 @@ section p {
 
 section.main {
     padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+section.center {
     text-align: center;
 }
 
@@ -23,19 +42,57 @@ section.main img {
     max-width: 100%;
 }
 
-section.white {
-    background-color: white;
-    color: black;
-}
-
-section.dark {
-    background-color: #343a40;
+section.green {
+    background-color: #568187;
     color: white;
 }
 
-section.white img, section.dark img {
+section.purple {
+    background-color: #968fc0;
+    color: white;
+}
+
+section.cloth {
+    background-color: #83c08c;
+    color: white;
+}
+
+section.green img.laptop, section.purple img.laptop {
     max-width: initial;
     width: 100%;
     top: -10%;
     position: relative;
+}
+
+section.green img.phone, section.purple img.phone {
+    max-width: initial;
+    width: 75%;
+    top: -10%;
+    position: relative;
+    text-align:center;
+}
+
+div.phone {
+    text-align:center;
+}
+
+footer {
+    text-align:center;
+    color: white;
+}
+
+.description {
+    padding-top: 50px;
+}
+
+.description 
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal; 
+    font-weight: 100;
+}
+
+h1, .description p {
+    color: white;
 }
