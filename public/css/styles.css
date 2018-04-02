@@ -8,6 +8,15 @@ nav {
     background-color: #568187;
 }
 
+.fadein {
+ visibility: hidden;
+}
+
+.slideup {
+ position: relative;
+ bottom: -50%;
+}
+
 .navbar-toggler {
     border-color: white;
 }
@@ -82,7 +91,7 @@ footer {
 }
 
 .description {
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .description 
