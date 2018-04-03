@@ -1,10 +1,10 @@
 window.onload = function() {
-  $(".fade-in")
+  $(".effect__fade-in")
     .css("visibility", "visible")
     .hide()
     .fadeIn(3000);
 
-  $(".slide-up").animate(
+  $(".effect__slide-up").animate(
     {
       bottom: "0%"
     },
@@ -38,7 +38,7 @@ function appearRight() {
     this.destroy();
 };
 
-const appearRightWaypoints = $(".appear-right").map(
+const appearRightWaypoints = $(".effect__appear--right").map(
   function() {
     new Waypoint({
       element: document.getElementById(this.id),
@@ -48,7 +48,7 @@ const appearRightWaypoints = $(".appear-right").map(
 
 );
 
-const appearLeftWaypoints = $(".appear-left").map(function() {
+const appearLeftWaypoints = $(".effect__appear--left").map(function() {
   new Waypoint({
     element: document.getElementById(this.id),
     handler: appearLeft,

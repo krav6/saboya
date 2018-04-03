@@ -1,32 +1,26 @@
 body {
     background-color: #568187;
-    background-image: url("patternqqq.png");
+    background-image: url("/img/pattern.png");
     background-repeat: repeat-x;
+}
+
+a {
+    color: white;
 }
 
 nav {
     background-color: rgba(86,129,135, 0.75);
 }
 
-.fade-in {
- visibility: hidden;
+footer {
+    text-align:center;
+    color: white;
 }
 
-.slide-up {
- position: relative;
- bottom: -50%;
-}
-
-.appear-left {
-    opacity: 0;
-    position: relative;
-    left: -50%;
-}
-
-.appear-right {
-    opacity: 0;
-    position: relative;
-    right: -50%;
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal; 
+    font-weight: 100;
 }
 
 .navbar-toggler {
@@ -37,81 +31,77 @@ nav {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-a {
-    color: white;
+.effect__fade-in {
+ visibility: hidden;
 }
 
-section {
+.effect__slide-up {
+ position: relative;
+ bottom: -50%;
+}
+
+.effect__appear {
+    opacity: 0;
+    position: relative;
+}
+
+.effect__appear--left {
+    left: -50%;
+}
+
+.effect__appear--right {
+    right: -50%;
+}
+
+.section {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-section p {
-    padding-bottom: 20px;
-}
-
-section.main {
+.section--main {
     padding-top: 75px;
     padding-bottom: 50px;
+    color: white;
 }
 
-section.center {
-    text-align: center;
-}
-
-section.main img {
-    max-width: 100%;
-}
-
-section.green {
+.section--green {
     background-color: #568187;
     color: white;
 }
 
-section.purple {
+.section--purple {
     background-color: #968fc0;
     color: white;
 }
 
-section.cloth {
+.section--lime {
     background-color: #83c08c;
     color: white;
 }
 
-section.green img.laptop, section.purple img.laptop {
+.section--centered {
+    text-align: center;
+}
+
+.section__text {
+    padding-bottom: 20px;
+}
+
+.section__logo {
+    max-width: 100%;
+}
+
+.section__image {
     max-width: initial;
     width: 100%;
     top: -10%;
     position: relative;
 }
 
-section.green img.phone, section.purple img.phone {
-    max-width: initial;
-    width: 75%;
-    top: -10%;
-    position: relative;
-    text-align:center;
+.section__image--centered {
+    text-align: center;
 }
 
-div.phone {
-    text-align:center;
-}
-
-footer {
-    text-align:center;
-    color: white;
-}
-
-.description {
+.section__description {
     padding-top: 25px;
-}
-
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal; 
-    font-weight: 100;
-}
-
-h1, .description p {
-    color: white;
 }
