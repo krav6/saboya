@@ -1,20 +1,27 @@
 body {
-    background-color: #568187;
+    background-color: #5E8C61;
     background-image: url("/img/pattern.png");
     background-repeat: repeat-x;
 }
 
-a {
+nav {
+    background-color: rgba(94,140,97, 0.75);
+}
+
+.nav__link {
     color: white;
 }
 
-nav {
-    background-color: rgba(86,129,135, 0.75);
+.nav__link:hover {
+    color: darkgreen;
 }
 
 footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align:center;
-    color: white;
+    background-color:white;
+    color: #5E8C61;
 }
 
 h1 {
@@ -54,8 +61,8 @@ h1 {
 }
 
 .section {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .section--main {
@@ -64,18 +71,13 @@ h1 {
     color: white;
 }
 
+.section--white {
+    background-color: white;
+    color: #5E8C61;
+}
+
 .section--green {
-    background-color: #568187;
-    color: white;
-}
-
-.section--purple {
-    background-color: #968fc0;
-    color: white;
-}
-
-.section--lime {
-    background-color: #83c08c;
+    background: linear-gradient(0deg,#5E8C61, #78b07b);
     color: white;
 }
 
@@ -83,8 +85,20 @@ h1 {
     text-align: center;
 }
 
+.section__title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section__icon {
+    background: linear-gradient(-45deg,#5E8C61 50%, #6b9f6e 50%);
+    border-radius: 10px;
+    color: white;
+}
+
 .section__text {
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .section__logo {
@@ -100,6 +114,15 @@ h1 {
 
 .section__image--centered {
     text-align: center;
+}
+
+.section__link--green {
+    color: #5E8C61;
+}
+
+.section__link--green:hover {
+    color: darkgreen;
+    text-decoration: none;
 }
 
 .section__description {

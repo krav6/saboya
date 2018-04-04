@@ -9,12 +9,18 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="public/css/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/solid.js" integrity="sha384-P4tSluxIpPk9wNy8WSD8wJDvA8YZIkC6AQ+BfAFLXcUZIPQGu4Ifv4Kqq+i2XzrM"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/brands.js" integrity="sha384-qJKAzpOXfvmSjzbmsEtlYziSrpVjh5ROPNqb8UZ60myWy7rjTObnarseSKotmJIx"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/fontawesome.js" integrity="sha384-2IUdwouOFWauLdwTuAyHeMMRFfeyy4vqYNjodih+28v2ReC+8j+sLF9cK339k5hY"
+        crossorigin="anonymous"></script>
     <title>SABOYA</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#home">
             <img src="img/logo_only_white.png" height="32">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -24,21 +30,21 @@
         <div class="collapse navbar-collapse ml-auto" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto float-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a id="home-link" class="nav-link nav__link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Works</a>
+                    <a id="services-link" class="nav-link nav__link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a id="portfolio-link" class="nav-link nav__link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a id="contact-link" class="nav-link nav__link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <section class="section section--main section--centered">
+    <section id="home" class="section section--main section--centered">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -48,7 +54,7 @@
             <div class="row justify-content-center section__description">
                 <div class="col-md-8">
                     <div class="effect__fade-in effect__slide-up">
-                        <h1>I need money, you need a website.</h1>
+                        <h1>Web-based solutions, tailored to you</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                             ut aliquip ex ea commodo consequat.</p>
@@ -57,29 +63,30 @@
             </div>
         </div>
     </section>
-    <section class="section section--green">
+    <section id="services" class="section section--white section--centered">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 align-self-center">
-                    <h2>Lorem ipsum valid</h2>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum."</p>
-                </div>
-                <div class="col-md-7">
-                    <img id="laptop" class="section__image effect__appear effect__appear--left" src="img/macbook.png">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section section--purple">
-        <div class="container">
+            <h2 class="section__title">SERVICES</h2>
             <div class="row justify-content-center">
                 <div class="col-md-3">
-                    <img id="phone" class="section__image effect__appear effect__appear--right" src="img/phone.png">
+                    <div id="back-end-icon" class="effect__appear effect__appear--left">
+                        <i class="fas fa-server fa-5x section__icon" data-fa-transform="shrink-4"></i>
+                        <p class="section__text">Back-end development</p>
+                    </div>
                 </div>
+                <div class="col-md-3">
+                    <div id="front-end-icon" class="effect__appear effect__appear--right">
+                        <i class="fas fa-desktop fa-5x section__icon" data-fa-transform="shrink-4"></i>
+                        <p class="section__text">Front-end development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="portfolio" class="section section--green">
+        <div class="container">
+            <h2 class="section__title">PORTFOLIO</h2>
+            <div class="row justify-content-center">
                 <div class="col-md-6 align-self-center">
                     <h2>Lorem ipsum valid</h2>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -91,15 +98,19 @@
             </div>
         </div>
     </section>
-    <section class="section section--centered section--lime">
+    <section id="contact" class="section section--white">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6 align-self-center">
-                    <div id="middle" class="effect__appear effect__appear--left">
-                        <h2>Title in the middle</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua.</p>
-                    </div>
+                <div class="col-md-3  align-self-center">
+                    <h2 class="section__title">CONTACT</h2>
+                    <p>
+                        <a href="mailto:contact@saboya.com" class="section__link--green">
+                            <i class="fas fa-envelope"></i> contact@saboya.com</a>
+                    </p>
+                    <p>
+                        <a href="#" class="section__link--green">
+                            <i class="fab fa-skype"></i> saboya</a>
+                    </p>
                 </div>
             </div>
         </div>
