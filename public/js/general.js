@@ -35,6 +35,17 @@ function appearLeft() {
   this.destroy();
 }
 
+function appearCenter() {
+  $("#" + this.element.id).animate(
+    {
+      opacity: 1,
+    },
+    { duration: 2000, queue: false }
+  );
+
+  this.destroy();
+}
+
 function appearRight() {
   $("#" + this.element.id).animate(
     {
@@ -51,6 +62,14 @@ const appearRightWaypoints = $(".effect__appear--right").map(function() {
   new Waypoint({
     element: document.getElementById(this.id),
     handler: appearRight,
+    offset: "90%"
+  });
+});
+
+const appearCenterWaypoints = $(".effect__appear--center").map(function() {
+  new Waypoint({
+    element: document.getElementById(this.id),
+    handler: appearCenter,
     offset: "90%"
   });
 });
