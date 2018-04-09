@@ -1,0 +1,73 @@
+body {
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    white 50%,
+    #ffdfe5 50%,
+    #ffb7c5 100%
+  );
+
+  transition: background-position 2s;
+}
+nav a {
+  color: white;
+}
+.navbar-brand {
+  color: black;
+}
+.navbar-toggler {
+  border: 0;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.section--main {
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 40%, white 40%);
+  left: -100%;
+  position: relative;
+  transition: left 2s 1s;
+  margin-right: 20%;
+  padding-top: 50px;
+}
+.section--content {
+  background-color: white;
+  position: relative;
+  margin-bottom: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: black;
+}
+.section--content--left {
+  left: -100%;
+  transition: left 1s 1s;
+}
+
+.section--content--right {
+  right: -100%;
+  transition: right 1s 1s;
+}
+
+.section--main__image {
+  padding-top: 50px;
+  max-width: 85%;
+  opacity: 0;
+  transition: opacity 3s 2s;
+}
+.section--content__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.section--content__list--right {
+  float: right;
+}
+.section--content__map {
+  display: block;
+  width: 100%;
+  height: 25%;
+  border: none;
+}
+
+.section--content__photo {
+    max-width: 512px;
+}
