@@ -7,8 +7,6 @@ window.onload = function() {
 };
 
 function initMap() {
-  // Create a new StyledMapType object, passing it an array of styles,
-  // and the name to be displayed on the map type control.
   var styledMapType = new google.maps.StyledMapType([
     {
       featureType: "all",
