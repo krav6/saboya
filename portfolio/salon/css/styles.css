@@ -32,6 +32,10 @@ button:focus {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(163,22,69, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+.navbar__logo {
+  min-height: 30px;
+  max-height: 50px;
+}
 .section--main {
   background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 40%, white 40%);
   left: -100%;
@@ -48,18 +52,18 @@ button:focus {
 .section--content--left {
   background-color: white;
   color: rgba(163, 22, 69, 1);
-  left: -100%;
-  transition: left 1s 1s;
-}
-.section--content--right {
-  right: -100%;
-  transition: right 1s 1s;
 }
 .section--main__image {
-  padding-top: 50px;
-  max-width: 85%;
+  width: 240px;
   opacity: 0;
   transition: opacity 3s 2s;
+}
+.section--main__background {
+  position: absolute;
+  top: 40%;
+  left: -50%;
+  width: 455px;
+  z-index: -1;
 }
 .section--content__list {
   list-style: none;
@@ -75,25 +79,19 @@ button:focus {
   height: 25%;
   border: none;
 }
+.section--content__photo-container {
+  visibility: hidden;
+  transition: box-shadow 1s;
+}
+.section--content__photo-container:hover {
+  box-shadow: 0px 0px 20px 5px #ffcad4;
+}
 .section--content__photo {
   min-height: 201px;
   width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
   background-size: cover;
-}
-.overlay {
-  background: linear-gradient(-45deg, #ffdfe5 50%, white 50%);
-  opacity: 0.9;
-  position: inherit;
-  width: 100%;
-  min-height: inherit;
-  transition: opacity 1s;
-  vertical-align: middle;
-  text-align: center;
-}
-.overlay:hover {
-  opacity: 0;
 }
 .overlay__title {
   position: absolute;
@@ -115,6 +113,7 @@ button:focus {
 }
 .navbar__icon {
   margin-left: 5px;
+  margin-top: 3px;
 }
 .navbar__icon--facebook:hover {
   color: #3b5998;
@@ -161,4 +160,11 @@ button:focus {
 .section--content__role {
   position: relative;
   top: -20px;
+}
+.effect__appear {
+  opacity: 0;
+  position: relative;
+}
+.effect__appear--center {
+  transition: opacity 2s;
 }

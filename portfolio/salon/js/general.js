@@ -1,9 +1,27 @@
+function appearCenter() {
+  $("#" + this.element.id).css({ opacity: "1" });
+
+  this.destroy();
+}
+
 window.onload = function() {
   $("body").css({ "background-position": "-100% 0%" });
   $(".section--main").css({ left: "0%" });
-  $(".section--content--left").css({ left: "0%" });
-  $(".section--content--right").css({ right: "0%" });
   $(".section--main__image").css({ opacity: "1" });
+
+  setTimeout(function() {
+    $(".section--content__photo-container").css({ visibility: "visible" });
+
+    $(".effect__appear--center").map(
+      function() {
+        new Waypoint({
+          element: document.getElementById(this.id),
+          handler: appearCenter,
+          offset: "90%"
+        });
+      }
+    );
+  }, 2500);
 };
 
 function initMap() {

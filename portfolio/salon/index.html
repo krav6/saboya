@@ -17,21 +17,10 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="#home">
-            <b> YourHairSalon </b>
+            <img class="navbar__logo" src="img/salon_logo.png">
         </a>
-        <div class="ml-auto"></div>
-        <a href="#">
-            <i class="fab fa-facebook-square fa-2x navbar__icon navbar__icon--facebook"></i>
-        </a>
-        <a href="#">
-            <i class="fab fa-instagram fa-2x navbar__icon navbar__icon--instagram"></i>
-        </a>
-        <a href="#">
-            <i class="fab fa-twitter-square fa-2x navbar__icon navbar__icon--twitter"></i>
-        </a>
-        </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -46,71 +35,84 @@
                     <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#staff">Staff</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contacts</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fab fa-facebook-square fa-2x navbar__icon navbar__icon--facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fab fa-instagram fa-2x navbar__icon navbar__icon--instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fab fa-twitter-square fa-2x navbar__icon navbar__icon--twitter"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
-    <section class="section section--main">
+    <section class="section section--main" id="home">
         <div class="container">
             <div class="row justify-content-end">
-                <div class="col-md-7 align-self-center">
+                <div class="col-md-5 mt-5 align-self-center">
                     <h1>SPRING CAMPAIGN</h1>
-                    <p>Full shave 50% off</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla eget ligula fringilla interdum.
+                        Aliquam consectetur neque nec nisl posuere, sed ultrices sapien porttitor. Donec metus augue, lobortis
+                        vel tellus sit amet, luctus elementum ex.
+                    </p>
                 </div>
-                <div class="col-md-3">
-                    <img class="section--main__image" src="img/asian_girl.png" alt="">
+                <div class="col-md-4">
+                    <img class="section--main__image section--main__background" src="img/white_lollipop.png">
+                    <img class="section--main__image" src="img/hairmodel.png">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section section--content section--content--left">
+    <section class="section section--content section--content--left" id="pictures">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-md-4">
+                <div class="col-md-4 section--content__photo-container">
                     <a href="#salonCarousel" data-slide-to="0">
-                        <div class="section--content__photo" style="background-image: url('/portfolio/salon/img/pic1.jpg')">
-                            <div class="overlay" data-toggle="modal" data-target="#view-image">
-                                <h2 class="overlay__title noselect">Salon</h2>
-                            </div>
+                        <div class="section--content__photo effect__appear effect__appear--center" id="interior" data-toggle="modal" data-target="#view-image"
+                            style="background-image: url('/portfolio/salon/img/pic1.jpg')">
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 section--content__photo-container">
                     <a href="#salonCarousel" data-slide-to="1">
-                        <div class="section--content__photo" style="background-image: url('/portfolio/salon/img/pic2.jpg')">
-                            <div class="overlay" data-toggle="modal" data-target="#view-image">
-                                <h2 class="overlay__title noselect">Front</h2>
-                            </div>
+                        <div class="section--content__photo effect__appear effect__appear--center" id="front" data-toggle="modal" data-target="#view-image"
+                            style="background-image: url('/portfolio/salon/img/pic2.jpg')">
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 section--content__photo-container">
                     <a href="#salonCarousel" data-slide-to="2">
-                        <div class="section--content__photo" style="background-image: url('/portfolio/salon/img/pic3.jpg')">
-                            <div class="overlay" data-toggle="modal" data-target="#view-image">
-                                <h2 class="overlay__title noselect">Door</h2>
-                            </div>
+                        <div class="section--content__photo effect__appear effect__appear--center" id="open" data-toggle="modal" data-target="#view-image"
+                            style="background-image: url('/portfolio/salon/img/pic3.jpg')">
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section section--content section--content--right">
+    <section class="section section--content section--content--right" id="services">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>SERVICES</h2>
+                    <h2 class="effect__appear effect__appear--center" id="services-title">SERVICES</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-6 text-right">
-                    <ul class="section--content__list section--content__list--right">
+                    <ul class="section--content__list section--content__list--right effect__appear effect__appear--center" id="service-list">
                         <li>Cut</li>
                         <li>Perm</li>
                         <li>Color</li>
@@ -119,7 +121,7 @@
                     </ul>
                 </div>
                 <div class="col-6">
-                    <ul class="section--content__list">
+                    <ul class="section--content__list effect__appear effect__appear--center" id="price-list">
                         <li>¥4500</li>
                         <li>¥8920</li>
                         <li>¥5340</li>
@@ -130,53 +132,67 @@
             </div>
         </div>
     </section>
-    <section class="section section--content section--content--left">
+    <section class="section section--content section--content--left" id="staff">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>STAFF</h2>
+                    <h2 class="effect__appear effect__appear--center" id="staff-title">STAFF</h2>
                 </div>
             </div>
             <div class="row justify-content-between">
                 <div class="col-md-3 text-center">
-                    <img class="section--content__profile" src="img/staff1.jpg">
-                    <div class="section--content__profile__overlay">
-                        <h2 class="overlay__title noselect">Dave</h2>
+                    <div class="effect__appear effect__appear--center" id="dave">
+                        <img class="section--content__profile" src="img/staff1.jpg">
+                        <div class="section--content__profile__overlay">
+                            <h2 class="overlay__title noselect">Dave</h2>
+                        </div>
+                        <p class="section--content__role">Cut, Shampoo&Blow</p>
                     </div>
-                    <p class="section--content__role">Cut, Shampoo&Blow</p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <img class="section--content__profile" src="img/staff2.jpg">
-                    <div class="section--content__profile__overlay">
-                        <h2 class="overlay__title noselect">Carla</h2>
+                    <div class="effect__appear effect__appear--center" id="carla">
+                        <img class="section--content__profile" src="img/staff2.jpg">
+                        <div class="section--content__profile__overlay">
+                            <h2 class="overlay__title noselect">Carla</h2>
+                        </div>
+                        <p class="section--content__role">Perm, Straight Perm</p>
                     </div>
-                    <p class="section--content__role">Perm, Straight Perm</p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <img class="section--content__profile" src="img/staff3.jpg">
-                    <div class="section--content__profile__overlay">
-                        <h2 class="overlay__title noselect">Rachel</h2>
+                    <div class="effect__appear effect__appear--center" id="rachel">
+                        <img class="section--content__profile" src="img/staff3.jpg">
+                        <div class="section--content__profile__overlay">
+                            <h2 class="overlay__title noselect">Rachel</h2>
+                        </div>
+                        <p class="section--content__role">Color</p>
                     </div>
-                    <p class="section--content__role">Color</p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <img class="section--content__profile" src="img/staff4.jpg">
-                    <div class="section--content__profile__overlay">
-                        <h2 class="overlay__title noselect">Bjørn</h2>
+                    <div class="effect__appear effect__appear--center" id="bjorn">
+                        <img class="section--content__profile" src="img/staff4.jpg">
+                        <div class="section--content__profile__overlay">
+                            <h2 class="overlay__title noselect">Bjørn</h2>
+                        </div>
+                        <p class="section--content__role">Cut, Color, Perm</p>
                     </div>
-                    <p class="section--content__role">Cut, Color, Perm</p>
                 </div>
             </div>
     </section>
-    <section class="section section--content section--content--right">
+
+    <section class="section section--content section--content--right section--content__map-2" id="googlemaps">
+        <div id="map" class="section--content__map effect__appear effect__appear--center" id="map-content">
+        </div>
+    </section>
+
+    <section class="section section--content section--content--left" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>CONTACTS</h2>
+                    <h2 class="effect__appear effect__appear--center" id="contacts-title">CONTACTS</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col text-center">
+                <div class="col text-center effect__appear effect__appear--center" id="contacts-content">
                     <p>
                         <i class="fas fa-phone"></i> 1234-123456</p>
                     <p>
@@ -191,11 +207,6 @@
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="section section--content section--content--left section--content__map-2">
-        <div id="map" class="section--content__map">
         </div>
     </section>
 
@@ -235,6 +246,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="/public/js/noframework.waypoints.min.js"></script>
     <script src="js/general.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBX_DoKSdAdxLTHFvf5OIMM8wHOhB5JPA&callback=initMap">
     </script>
