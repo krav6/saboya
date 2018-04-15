@@ -170,3 +170,7 @@ button:focus {
 .effect__appear--center {
   transition: opacity 2s;
 }
+.carousel-caption {
+  background-color: rgba(253, 214, 221, 0.9);
+  color: rgba(163, 22, 69, 1);
+}
