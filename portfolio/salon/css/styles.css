@@ -7,6 +7,7 @@ body {
     #ffcad4 100%
   );
   color: rgba(163, 22, 69, 1);
+  font-family: 'Barlow', sans-serif;
   transition: background-position 2s;
 }
 nav {
