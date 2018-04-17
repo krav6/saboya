@@ -281,6 +281,15 @@ function initMap() {
     }
   });
 
+  var marker = new google.maps.Marker({
+    position: {
+      lat: 48.859785,
+      lng: 2.294117
+    },
+    map: map,
+    title: "Our salon"
+  });
+
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set("styled_map", styledMapType);
   map.setMapTypeId("styled_map");
