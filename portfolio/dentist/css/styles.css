@@ -1,53 +1,59 @@
 body {
-  background: radial-gradient(
-      rgba(63, 63, 63, 0.8), 
-      rgb(19, 19, 19)
-    ), url("/portfolio/dentist/img/back.jpg") no-repeat center center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-  font-family: 'Merriweather', serif;
+  color: black;
+  font-family: "Merriweather", serif;
 }
 
 a {
   color: white;
-  font-family: 'Patua One', cursive;
+  font-family: "Patua One", cursive;
 }
 
 a:hover {
   color: rgb(212, 212, 212);
 }
 
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
+
+.nav__link--active {
+  text-decoration: underline;
+}
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.cover{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: radial-gradient(
-      rgba(219, 219, 219, 0.2) 20%, 
-      transparent 60%
-    );
-    z-index: -1;;
-    opacity: 0;
-    transition: opacity 2s;
+.content__title {
+  border-bottom: 1px solid black;
 }
 
-.main {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 80%;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+.content__image {
+  width: 100%;
 }
 
-.message:hover ~ .cover {
-    opacity: 1;
+.content__image_holder {
+  border-bottom: 1px dashed black;
+}
+
+.shadow {
+  box-shadow: inset 0 0 2px 0 rgba(255, 255, 255, 0.4),
+    inset 0 0 3px 0 rgba(0, 0, 0, 0.4), inset 0 0 3px 5px rgba(0, 0, 0, 0.05),
+    2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (min-width: 992px) {
+  .border-md-left {
+    border-left: 1px dashed black;
+  }
+
+  .border-md-right {
+    border-right: 1px dashed black;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .border-sm-top {
+    border-top: 1px dashed black;
+  }
 }
