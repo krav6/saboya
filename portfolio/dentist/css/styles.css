@@ -1,14 +1,25 @@
 body {
   color: black;
   font-family: "Merriweather", serif;
+  position: relative;
+  margin: 0;
 }
 
 a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(212, 212, 212);
+  text-decoration: none;
+}
+
+.navbar a {
   color: white;
   font-family: "Patua One", cursive;
 }
 
-a:hover {
+.navbar a:hover {
   color: rgb(212, 212, 212);
 }
 
@@ -22,6 +33,12 @@ a:hover {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .content__title {
@@ -42,7 +59,22 @@ a:hover {
     2px 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.map {
+  min-width: 100%;
+  height: 350px;
+}
+
 @media only screen and (min-width: 992px) {
+  .border-lg-left {
+    border-left: 1px dashed black;
+  }
+
+  .border-lg-right {
+    border-right: 1px dashed black;
+  }
+}
+
+@media only screen and (max-width: 992px) {
   .border-md-left {
     border-left: 1px dashed black;
   }
@@ -50,10 +82,22 @@ a:hover {
   .border-md-right {
     border-right: 1px dashed black;
   }
+
+  .border-md-top {
+    border-top: 1px dashed black;
+  }
+
+  .border-md-bottom {
+    border-bottom: 1px dashed black;
+  }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .border-sm-top {
     border-top: 1px dashed black;
+  }
+
+  .border-sm-bottom {
+    border-bottom: 1px dashed black;
   }
 }

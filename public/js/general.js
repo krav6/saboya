@@ -23,18 +23,6 @@ window.onload = function() {
   );
 };
 
-function appearLeft() {
-  $("#" + this.element.id).animate(
-    {
-      opacity: 1,
-      left: "0%"
-    },
-    { duration: 2000, queue: false }
-  );
-
-  this.destroy();
-}
-
 function appearCenter() {
   $("#" + this.element.id).animate(
     {
@@ -46,38 +34,10 @@ function appearCenter() {
   this.destroy();
 }
 
-function appearRight() {
-  $("#" + this.element.id).animate(
-    {
-      opacity: 1,
-      right: "0%"
-    },
-    { duration: 2000, queue: false }
-  );
-
-  this.destroy();
-}
-
-const appearRightWaypoints = $(".effect__appear--right").map(function() {
-  new Waypoint({
-    element: document.getElementById(this.id),
-    handler: appearRight,
-    offset: "90%"
-  });
-});
-
-const appearCenterWaypoints = $(".effect__appear--center").map(function() {
+const appearCenterWaypoints = $(".effect__appear").map(function() {
   new Waypoint({
     element: document.getElementById(this.id),
     handler: appearCenter,
-    offset: "90%"
-  });
-});
-
-const appearLeftWaypoints = $(".effect__appear--left").map(function() {
-  new Waypoint({
-    element: document.getElementById(this.id),
-    handler: appearLeft,
     offset: "90%"
   });
 });
