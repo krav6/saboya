@@ -134,11 +134,11 @@ footer {
 }
 
 .section__portfolio__title a {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
 .section__portfolio__title a:hover {
-  color:gainsboro;
+  color: gainsboro;
   text-decoration: none;
 }
