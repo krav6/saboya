@@ -90,8 +90,13 @@ footer {
 }
 
 .section__text {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 20px;
+  line-height: 1;
+}
+
+.section__text--small {
+  font-size: x-small;
 }
 
 .section__logo {
