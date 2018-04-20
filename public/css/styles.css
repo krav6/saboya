@@ -60,7 +60,7 @@ footer {
 
 .section--main {
   padding-top: 75px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   color: white;
 }
 
@@ -130,7 +130,13 @@ footer {
 }
 
 .section__description {
-  padding-top: 25px;
+  padding-top: 10px;
+}
+
+.section__catch {
+  font-family: "Assistant", sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 .section__portfolio__title a {
