@@ -18,65 +18,71 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="index.html">
-            Future Dental
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse ml-auto" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto float-right">
-                <li class="nav-item">
-                    <a id="home-link" class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a id="services-link" class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a id="contact-link" class="nav-link nav__link--active" href="#">Contact</a>
-                </li>
-            </ul>
+    <div id="container">
+        <div id="header">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a class="navbar-brand" href="index.html">
+                    Future Dental
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-auto" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto float-right">
+                        <li class="nav-item">
+                            <a id="home-link" class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="services-link" class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contact-link" class="nav-link nav__link--active" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
-    <div class="content pl-5 pr-5 pb-5">
-        <div class="row justify-content-center align-items-center mt-5 pt-3">
-            <div class="col-8 text-center content__title">
-                <h1>Contact</h1>
+        <div id="body" class="pt-3">
+            <div class="content p-5">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-8 text-center content__title">
+                        <h1>Contact</h1>
 
+                    </div>
+                </div>
+                <div class="row justify-content-center  align-items-center mt-4">
+                    <div class="col-md-4 col-lg-3 text-center text-md-left border-lg-right border-sm-bottom">
+                        <p>
+                            <i class="fas fa-clock"></i> 10:00 - 18:00
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i> 1234-123456</p>
+                        <p>
+                            <a href="mailto:contact@futuredental.com">
+                                <i class="fas fa-envelope"></i> contact@futuredental.com
+                            </a>
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker"></i> 1234, XY Town, ZY street 32/b
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 ml-md-3 mt-3">
+                        <iframe frameborder="0" class="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCBX_DoKSdAdxLTHFvf5OIMM8wHOhB5JPA
+                            &q=Space+Needle,Seattle+WA">
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row justify-content-center  align-items-center mt-4">
-            <div class="col-md-4 col-lg-3 text-center text-md-left border-lg-right border-sm-bottom">
-                <p>
-                    <i class="fas fa-clock"></i> 10:00 - 18:00
-                </p>
-                <p>
-                    <i class="fas fa-phone"></i> 1234-123456</p>
-                <p>
-                    <a href="mailto:contact@futuredental.com">
-                        <i class="fas fa-envelope"></i> contact@futuredental.com
-                    </a>
-                </p>
-                <p>
-                    <i class="fas fa-map-marker"></i> 1234, XY Town, ZY street 32/b
-                </p>
-            </div>
-            <div class="col-md-4 col-lg-4 ml-md-3 mt-sm-3">
-                <iframe frameborder="0" class="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCBX_DoKSdAdxLTHFvf5OIMM8wHOhB5JPA
-                            &q=Space+Needle,Seattle+WA">
-                </iframe>
-            </div>
+        <div id="footer">
+            <footer class="text-center">
+                <a href="/index.html">
+                    <p>© 2018 SABOYA. All rights reserved.</p>
+                </a>
+            </footer>
         </div>
     </div>
-
-    <footer class="footer--absolute text-center">
-        <a href="/index.html">
-            <p>© 2018 SABOYA. All rights reserved.</p>
-        </a>
-    </footer>
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
