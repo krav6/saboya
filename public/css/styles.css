@@ -153,3 +153,66 @@ footer {
   color: gainsboro;
   text-decoration: none;
 }
+
+.section__button--red {
+  pointer-events: none;
+  background-color: rgb(141, 45, 33);
+  color:white;
+}
+
+.section__button--red:hover {
+  background-color: rgb(119, 37, 27);
+}
+
+.section__button--dark-blue {
+  pointer-events: none;
+  background-color: rgb(37, 73, 173);
+  color:white;
+}
+
+.section__button--dark-blue:hover {
+  background-color: rgb(32, 58, 131);
+}
+
+.section__button--purple {
+  pointer-events: none;
+  background-color: #6e498d;
+  color:white;
+}
+
+.section__button--purple:hover {
+  background-color: #512f6b;
+}
+
+.section__button--orange {
+  pointer-events: none;
+  background-color: #BA5A31;
+  color:white;
+}
+
+.section__button--orange:hover {
+  background-color: rgb(161, 79, 43);
+}
+
+.dropdown-menu {
+  border: 0;
+  background-color: #78b07b;
+  left: -400%;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #699b6c;
+  color:white;
+}
+
+.dropdown-item.active {
+  background-color: #5e8c61;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
