@@ -17,15 +17,12 @@ body {
   transition: background-position 2s;
   height: 100vh;
 }
-
 nav {
   background-color: rgba(253, 214, 221, 0.9);
 }
-
 a {
   color: rgba(163, 22, 69, 1);
 }
-
 a:hover {
   color: rgb(209, 50, 103);
   text-decoration: none;
@@ -34,17 +31,15 @@ a:hover {
 a {
   outline: none;
 }
-
 button:focus {
   outline: 0;
 }
-
 .navbar-toggler {
   border: 0;
   outline: none;
+
   color: rgba(163, 22, 69, 1);
 }
-
 .navbar__logo {
   min-height: 30px;
   max-height: 50px;
@@ -53,7 +48,6 @@ button:focus {
 .navbar__logo:hover {
   opacity: 0.7;
 }
-
 .section--main {
   background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 40%, white 40%);
   position: relative;
@@ -64,13 +58,11 @@ button:focus {
   -o-transition: left 2s 1s;
   transition: left 2s 1s;
 }
-
 .section--content {
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 .section--content--left {
   background-color: white;
   color: rgba(163, 22, 69, 1);
@@ -84,7 +76,6 @@ button:focus {
   -o-transition: opacity 3s 2s;
   transition: opacity 3s 2s;
 }
-
 .section--main__background {
   position: absolute;
   top: 40%;
@@ -92,24 +83,20 @@ button:focus {
   width: 150%;
   z-index: -1;
 }
-
 .section--content__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .section--content__list--right {
   float: right;
 }
-
 .section--content__map {
   display: block;
   width: 100%;
   height: 300px;
   border: none;
 }
-
 .section--content__photo-container {
   visibility: hidden;
   -webkit-transition: box-shadow 0.3s;
@@ -117,11 +104,9 @@ button:focus {
   -o-transition: box-shadow 0.3s;
   transition: box-shadow 0.3s;
 }
-
 .section--content__photo-container:hover {
   box-shadow: 0px 0px 20px 5px #ffcad4;
 }
-
 .section--content__photo {
   min-height: 201px;
   width: 100%;
@@ -135,7 +120,6 @@ button:focus {
     inset 0 0 3px 0 rgba(0, 0, 0, 0.4), inset 0 0 3px 5px rgba(0, 0, 0, 0.05),
     2px 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
-
 .overlay__title {
   position: absolute;
   top: 50%;
@@ -146,11 +130,9 @@ button:focus {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-
 .overlay__title:hover {
   opacity: 0;
 }
-
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -159,7 +141,6 @@ button:focus {
   -ms-user-select: none;
   user-select: none;
 }
-
 .navbar__icon {
   margin-left: 5px;
   margin-top: 3px;
@@ -168,33 +149,28 @@ button:focus {
 .navbar__icon--facebook:hover {
   color: #3b5998;
 }
-
 .navbar__icon--instagram:hover {
   color: #e95950;
 }
-
 .navbar__icon--twitter:hover {
   color: #55acee;
 }
-
 .modal__picture {
   width: 100%;
 }
-
 .close {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   z-index: 2;
   color: white;
+  opacity: 1;
 }
-
 .section--content__profile {
   margin-bottom: 25px;
   width: 150px;
   border-radius: 50%;
 }
-
 .section--content__profile__overlay {
   position: absolute;
   background: linear-gradient(-45deg, #ffdfe5 50%, white 50%);
@@ -213,7 +189,6 @@ button:focus {
   -o-transition: all 1s;
   transition: all 1s;
 }
-
 .section--content__profile__overlay:hover {
   opacity: 0;
   transform: rotate(180deg);
@@ -235,7 +210,6 @@ button:focus {
   -o-transition: opacity 2s;
   transition: opacity 2s;
 }
-
 .carousel-caption {
   background-color: rgba(253, 214, 221, 0.9);
   color: rgba(163, 22, 69, 1);
@@ -252,7 +226,6 @@ button:focus {
     inset 0 0 3px 0 rgba(0, 0, 0, 0.4), inset 0 0 3px 5px rgba(0, 0, 0, 0.05),
     2px 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
-
 .carousel {
   height: 100%;
 }

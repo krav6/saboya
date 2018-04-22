@@ -40,15 +40,6 @@ footer {
   color: white;
 }
 
-.effect__fade-in {
-  visibility: hidden;
-}
-
-.effect__slide-up {
-  position: relative;
-  bottom: -50%;
-}
-
 .effect__appear {
   opacity: 0;
   position: relative;
@@ -161,6 +152,10 @@ footer {
   text-decoration: none;
 }
 
+.section__button {
+  margin-bottom: 10px;
+}
+
 .section__button--red {
   pointer-events: none;
   background-color: rgb(141, 45, 33);
@@ -203,7 +198,7 @@ footer {
 
 .dropdown-menu {
   border: 0;
-  background-color: #78b07b;
+  background-color: rgba(120,176,123, 0.75);
   left: -300%;
 }
 

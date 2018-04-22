@@ -9,20 +9,6 @@ $(document).on("click", 'a[href^="#"]', function(event) {
   );
 });
 
-window.onload = function() {
-  $(".effect__fade-in")
-    .css("visibility", "visible")
-    .hide()
-    .fadeIn(3000);
-
-  $(".effect__slide-up").animate(
-    {
-      bottom: "0%"
-    },
-    { duration: 2000, queue: false }
-  );
-};
-
 function appearCenter() {
   $("#" + this.element.id).animate(
     {
