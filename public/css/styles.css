@@ -27,7 +27,7 @@ nav {
   color: gainsboro;
 }
 
-footer {
+.footer {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -217,4 +217,10 @@ footer {
 
 .navbar-collapse {
   flex-grow: 0;
+}
+
+.not-found {
+  margin-top: 250px;
+  font-family: "Assistant", sans-serif;
+  color: white;
 }
